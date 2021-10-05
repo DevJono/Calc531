@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="531.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calc531.Controller">
+   <children>
+            <Label alignment="CENTER" layoutX="221.0" layoutY="15.0" prefHeight="34.0" prefWidth="53.0" text="Deadlift" />
+            <TextField fx:id="nameField" layoutX="74.0" layoutY="19.0" prefHeight="25.0" prefWidth="126.0" promptText="Enter your name" />
+            <Label layoutX="18.0" layoutY="14.0" prefHeight="34.0" prefWidth="53.0" text="Name" />
+            <Label alignment="CENTER" layoutX="336.0" layoutY="14.0" prefHeight="34.0" prefWidth="53.0" text="Squat" />
+            <Label layoutX="476.0" layoutY="16.0" prefHeight="34.0" prefWidth="53.0" text="Bench" />
+            <TextField fx:id="oneRepMaxDeadField" layoutX="274.0" layoutY="20.0" prefHeight="25.0" prefWidth="50.0" promptText="Enter" />
+            <TextField fx:id="oneRepMaxSquatField" layoutX="396.0" layoutY="20.0" prefHeight="25.0" prefWidth="50.0" promptText="Enter" />
+            <TextField fx:id="oneRepMaxBenchField" layoutX="519.0" layoutY="19.0" prefHeight="25.0" prefWidth="50.0" promptText="Enter" />
+            <Button layoutX="623.0" layoutY="20.0" mnemonicParsing="false" onAction="#saveButton" text="Save" />
+            <Label layoutX="17.0" layoutY="62.0" text="Person" />
+            <ChoiceBox fx:id="choiceBox" layoutX="72.0" layoutY="58.0" prefHeight="25.0" prefWidth="126.0" />
+            <Label fx:id="deadLabel" layoutX="277.0" layoutY="58.0" prefHeight="25.0" prefWidth="50.0" />
+            <Label fx:id="squatLabel" layoutX="396.0" layoutY="58.0" prefHeight="25.0" prefWidth="50.0" />
+            <Label fx:id="benchLabel" layoutX="519.0" layoutY="58.0" prefHeight="25.0" prefWidth="50.0" />
+            <Label layoutX="227.0" layoutY="62.0" text="Deadlift" />
+            <Label layoutX="347.0" layoutY="62.0" text="Squat" />
+            <Label layoutX="476.0" layoutY="62.0" text="Bench" />
+            <Button layoutX="623.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#deleteButton" text="Delete" />
+            <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="18.0" layoutY="153.0" prefHeight="309.0" prefWidth="686.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="s1w1" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Weight" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Label text="Weight" GridPane.rowIndex="4" />
+                  <Label text="Weight" GridPane.rowIndex="6" />
+                  <Label text="Weight" GridPane.rowIndex="8" />
+                  <Label text="Set 1" GridPane.columnIndex="1" />
+                  <Label text="Set 2" GridPane.columnIndex="2" />
+                  <Label text="Set 3" GridPane.columnIndex="3" />
+                  <Label fx:id="s2w1" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label fx:id="s3w1" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label fx:id="s1w2" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="s2w2" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label fx:id="s3w2" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Label fx:id="s1w3" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="s2w3" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Label fx:id="s3w3" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Label fx:id="s4w1" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="s4w2" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Label fx:id="s4w3" contentDisplay="CENTER" prefHeight="17.0" prefWidth="51.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <Label text="Week 1 Reps" GridPane.rowIndex="1" />
+                  <Label text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="5" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="5" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label text="Week 2 Reps" GridPane.rowIndex="3" />
+                  <Label text="Week 3 Reps" GridPane.rowIndex="5" />
+                  <Label text="3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="3" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Label text="5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="3" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="1" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Label text="5" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label text="Deload Reps" GridPane.rowIndex="7" />
+                  <Label text="5" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Label text="5" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+            <Label layoutX="15.0" layoutY="98.0" text="Exercise" />
+            <ChoiceBox fx:id="exerciseSelector" layoutX="72.0" layoutY="94.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="oneRepMaxField" layoutX="445.0" layoutY="94.0" promptText="Enter your 1 rep max" />
+            <Label layoutX="283.0" layoutY="90.0" prefHeight="34.0" prefWidth="128.0" text="Enter your 1 Rep Max" />
+
+
+   </children>
+</AnchorPane>
